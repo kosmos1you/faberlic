@@ -1,0 +1,9 @@
+@font-face { font-family: "Oranienbaum"; src: url("../fonts/SF-Pro-Display-Mediu.woff") format("woff"); font-style: normal; font-weight: 500; }
+@font-face { font-family: "Oranienbaum"; src: url("../fonts/SF-Pro-Display-Semib.woff") format("woff"); font-style: normal; font-weight: 600; }
+@font-face { font-family: "Oranienbaum"; src: url("../fonts/SF-Pro-Display-Bold.woff") format("woff"); font-style: normal; font-weight: 700; }
+@font-face { font-family: "Oranienbaum"; src: url("../fonts/SF-Pro-Display-Regul.woff") format("woff"); font-style: normal; font-weight: 400; }
+*{
+    font-family: 'Oranienbaum',Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
