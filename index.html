@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUBERLICFUN</title>
+    <link rel="stylesheet" href="assets/faberlic_fun_template/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/faberlic_fun_template/img/favicon.ico" type="image/x-icon" />
+    <!--<link rel="preload" href="assets/faberlic_fun_template/fonts/Oranienbaum-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/faberlic_fun_template/fonts/Oranienbaum-Regular.woff" as="font" type="font/woff2" crossorigin>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://snipp.ru/cdn/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="assets/components/ajaxform/css/default.css" type="text/css" />
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="pulse_row">
+            <div class="pulse">
+                <span class="title-pulse"><b>Fuberlic</b>Fun</span>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        #hidden,
+        #hidden2 {
+            width: 1200px;
+        }
+
+        .fancybox-content {
+            background: none;
+            padding: 44px 0px;
+        }
+
+        .container-hidden {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hidden-text {
+            width: 100%;
+            height: 100%;
+            background: var(--color-white);
+            padding: 45px;
+            border-radius: 30px;
+        }
+
+        .hidden-text h3 {
+            color: var(--color-black);
+            font-size: 21px;
+            max-width: 510px;
+            font-weight: bold;
+        }
+
+        .hidden2 h3 {
+            max-width: 550px;
+        }
+
+        .hidden-text div p {
+            color: var(--color-black);
+            font-weight: 500;
+            line-height: 20px;
+        }
+
+        .hidden-text div {
+            max-width: 765px;
+            width: 100%;
+        }
+
+        .fancybox-button svg {
+            display: block;
+            height: 100%;
+            overflow: visible;
+            position: relative;
+            color: #fff;
+            height: 55px !important;
+            width: 55px !important;
+        }
+
+        .fancybox-slide--html .fancybox-close-small {
+            color: currentColor;
+            padding: 0px !important;
+            right: 0;
+            top: 0;
+        }
+    </style>
+    <div style="display: none;" id="hidden">
+        <div class="container">
+            <div class="container-hidden">
+                <div class="hidden-text">
+                    <h3>Вы можете начать свой путь с нами, регистрируясь для получения выгодных скидок</h3> <br>
+                    <div>
+                        <p>Покупайте товары собственного производства Faberlic с большой скидкой 20-30% от цены по
+                            каталогу. Это становится великолепной возможностью познакомиться с нашей продукцией и в
+                            будущем примкнуть к команде в качестве независимого предпринимателя</p>
+                    </div>
+                </div>
+                <div class="form wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form_bg">
+                                <form action="index.html" method="post" class="ajax_form af_example"
+                                    id="id_form_modal-shop">
+                                    <div class="form_title">
+                                        <h2>Хочу покупать товары Faberlic!</h2>
+                                        <p>Оставьте заявку на консультацию, а мы позвоним и расскажем детали</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group-flex">
+                                            <div class="flex_item">
+                                                <div class="controls">
+                                                    <input type="text" id="af_name" name="name" value=""
+                                                        placeholder="ФИО" class="form-control" />
+                                                </div>
+                                                <div class="controls controls_af_date">
+                                                    <label> Дата рождения </label>
+                                                    <input type="date" id="af_date" name="date" max="2024-11-08"
+                                                        value="2000-01-01" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="flex_item">
+                                                <div class="controls controls_row">
+                                                    <input type="email" id="af_email" name="email" value=""
+                                                        placeholder="E-mail" class="form-control" />
+                                                </div>
+                                                <div class="controls controls_row">
+                                                    <input type="text" id="af.phone" name="phone" value=""
+                                                        placeholder="Телефон" class="form-control tel" />
+                                                </div>
+                                                <div class="controls controls_row">
+                                                    <input type="text" id="af.sity" name="sity" value=""
+                                                        placeholder="Город проживания" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="id" value="id_form_modal-shop" />
+                                        <input type="hidden" name="time" value="08.11.2024 09:03:44" />
+
+                                        <div class="flex_item item_btn">
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" name="af_action" value="4ed90284001302630bb94228258254cf" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;" id="hidden2">
+        <div class="container">
+            <div class="container-hidden">
+                <div class="hidden-text hidden2">
+                    <h3>Зарегистрируйтесь, чтобы развивать собственную <br>команду внутри компании как бизнес</h3> <br>
+                    <div>
+                        <p>Мы предоставляем возможность не только получать качественные товары со скидками 20-30%, но и
+                            исследовать мир нашей продукции ближе. Это может вдохновить вас на создание собственной
+                            команды, дополнительный заработок и новые перспективы в бизнесе</p>
+                    </div>
+                </div>
+                <div class="form wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form_bg">
+                                <form action="index.html" method="post" class="ajax_form af_example"
+                                    id="id_form_modal-team">
+                                    <div class="form_title">
+                                        <h2>Хочу развивать команду!</h2>
+                                        <p>Оставьте заявку на консультацию, а мы позвоним и расскажем детали</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group-flex">
+                                            <div class="flex_item">
+                                                <div class="controls">
+                                                    <input type="text" id="af_name" name="name" value=""
+                                                        placeholder="ФИО" class="form-control" />
+                                                </div>
+                                                <div class="controls controls_af_date">
+                                                    <label> Дата рождения </label>
+                                                    <input type="date" id="af_date" name="date" max="2024-11-08"
+                                                        value="2000-01-01" class="form-control" />
+                                                </div>
+                                            </div>
+                                            <div class="flex_item">
+                                                <div class="controls controls_row">
+                                                    <input type="email" id="af_email" name="email" value=""
+                                                        placeholder="E-mail" class="form-control" />
+                                                </div>
+                                                <div class="controls controls_row">
+                                                    <input type="text" id="af.phone" name="phone" value=""
+                                                        placeholder="Телефон" class="form-control tel" />
+                                                </div>
+                                                <div class="controls controls_row">
+                                                    <input type="text" id="af.sity" name="sity" value=""
+                                                        placeholder="Город проживания" class="form-control" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="id" value="id_form_modal-team"" />
+            <input type=" hidden" name="time" value="08.11.2024 09:03:44" />
+
+                                        <div class="flex_item item_btn">
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" name="af_action" value="66364e61e01858937c1bd06b5161c9f5" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="wrapper absolute_menu">
+        <div class="container">
+            <div id="absolute_menu">
+                <div class="menu_fixed">
+                    <div>
+                        <div class="title_logo_block">
+                            <span class="title_logo"><b>Fuberlic</b>Fun</span>
+                        </div>
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_0">Суть</a>
+                                </li>
+                                <li class="menu_li absolute_li"><a class="scroll "
+                                        href="index.html#menu_1">Преимущества</a></li>
+                                <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_2">Для кого</a>
+                                </li>
+                                <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_3">Q&A</a></li>
+                                <li class="menu_li absolute_li"><a class="scroll "
+                                        href="index.html#menu_4">Регистрация</a></li>
+                            </ul>
+                        </nav>
+                        <div class="mobule_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper mobile">
+            <div class="close"><svg width="30px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m7 7 18 18M7 25 25 7" fill="none" stroke="#ffffff" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2px" class="stroke-000000"></path>
+                </svg></div>
+            <div class="mobile_row">
+                <div class="title_logo_block">
+                    <span class="title_logo"><b>Fuberlic</b>Fun</span>
+                </div>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_0">Суть</a></li>
+                        <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_1">Преимущества</a>
+                        </li>
+                        <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_2">Для кого</a></li>
+                        <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_3">Q&A</a></li>
+                        <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_4">Регистрация</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile_menu-footer">
+                    <p>По всем вопросам</p>
+                    <p><a href="tel:+79956588292 ">+7 (995) 658-82-92</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .header_section {
+            background: url('assets/faberlic_fun_template/img/bg_header.png');
+            background-size: cover;
+        }
+
+        @media screen and (max-width: 450px) {
+            .header_section {
+                background: url('assets/faberlic_fun_template/img/Frame_11498.jpeg');
+                background-size: cover;
+            }
+        }
+    </style>
+    <section class="wrapper_header">
+        <div class="container">
+            <div class="row">
+                <div class="header_section">
+                    <header>
+                        <div class="title_logo_block">
+                            <span class="title_logo"><b>Fuberlic</b>Fun</span>
+                        </div>
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_0">Суть</a>
+                                </li>
+                                <li class="menu_li absolute_li"><a class="scroll "
+                                        href="index.html#menu_1">Преимущества</a></li>
+                                <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_2">Для кого</a>
+                                </li>
+                                <li class="menu_li absolute_li"><a class="scroll " href="index.html#menu_3">Q&A</a></li>
+                                <li class="menu_li absolute_li"><a class="scroll "
+                                        href="index.html#menu_4">Регистрация</a></li>
+                            </ul>
+                        </nav>
+                        <div class="mobule_menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </header>
+                    <div class="header_content">
+                        <h1 class="header_content_title">Начни свой <br> бизнес в компании</h1>
+                        <span class="header_content_subtitle">с мировым именем</span>
+                        <p class="header_content_desc">и увеличь доход без опыта и вложений</p>
+                        <a href="index.html#menu_4" class="header_content_btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper_project" id="menu_0">
+        <div class="container">
+            <div class="row">
+                <div class="project_section">
+                    <h2 class="project_title">Суть проекта</h2>
+                    <div class="project_content">
+                        <img src="assets/faberlic_fun_template/img/tn-atom.png" alt="img" data-aos="fade-up">
+                        <div class="project_text ">
+                            <p>Каждый из нас заботится о себе, ухаживает за своим внешним видом, создает приятные
+                                условия в доме.</p>
+                            <p>Наши ежедневные привычки использования средств личной гигиены и товаров повседневного
+                                спроса могут принести больше, чем просто комфорт, а то, что ранее казалось лишь
+                                ежедневной необходимостью, может стать источником дохода.</p>
+                            <p>Компания Faberlic ценит членов своей команды и готова вознаградить вашу лояльность
+                                предоставляя существенные скидки и проводя разнообразные акции при покупке качественных
+                                товаров собственного производства, и это может стать ключом к зарождению и развитию
+                                собственного бизнеса.</p>
+                            <div class="project_text-btn">
+                                <a class="project_text_btn-link" href="index.html#" id="btn">Купить товар со скидкой</a>
+                                <a class="project_text_btn-link" href="index.html#" id="btn2">Создать свою команду</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper advantages" id="menu_1">
+        <div class="container">
+            <div class="row">
+                <div class="advantages_header">
+                    <p class="title">Преимущества</p>
+                    <a href="index.html#menu_4">Хочу в проект!</a>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <p class="title">Гибкий <br> график</p>
+                        <div class="description">
+                            <p>Определяйте удобное время работы и его продолжительность, например, совмещая с учебой или
+                                основным видом деятельности.</p>
+                        </div>
+                        <div class="icon">
+                            <img style="max-width: 42px;max-height: 42px;"
+                                src='assets/faberlic_fun_template/img/icon/icon.svg' />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">Работа <br> из любой точки</p>
+                        <div class="description">
+                            <p>Бизнес ведется полностью онлайн, для работы нужен только доступ в Интернет.</p>
+                        </div>
+                        <div class="icon">
+                            <img style="max-width: 42px;max-height: 42px;"
+                                src='assets/faberlic_fun_template/img/icon/icon2.svg' />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">Без <br> начальников</p>
+                        <div class="description">
+                            <p>Вы самостоятельно принимаете решения и свободны в действиях. </p>
+                        </div>
+                        <div class="icon">
+                            <img style="max-width: 42px;max-height: 42px;"
+                                src='assets/faberlic_fun_template/img/icon/icon3.svg' />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">Комфортная <br> обстановка дома</p>
+                        <div class="description">
+                            <p>Вы можете работать в уютном для вас местечке – дома, находясь рядом с семьей и родными.
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <img style="max-width: 42px;max-height: 42px;"
+                                src='assets/faberlic_fun_template/img/icon/icon4.svg' />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">Без финансовых <br> вложений</p>
+                        <div class="description">
+                            <p>Бизнес построен на бесплатных возможностях Интернета и не требует вложений. Вы в любой
+                                момент можете покинуть проект без обязательств.</p>
+                        </div>
+                        <div class="icon">
+                            <img style="max-width: 42px;max-height: 42px;"
+                                src='assets/faberlic_fun_template/img/icon/icon5.svg' />
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">Неограниченное <br> количество клиентов</p>
+                        <div class="description">
+                            <p>Станьте частью онлайн сообщества и помогайте людям по всему миру экономить семейный
+                                бюджет, быстро находя качественный продукт по выгодной цене.</p>
+                        </div>
+                        <div class="icon">
+                            <img style="max-width: 42px;max-height: 42px;"
+                                src='assets/faberlic_fun_template/img/icon/icon6.svg' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper this_project" id="menu_2">
+        <div class="container">
+            <div class="row">
+                <div class="this_project_header">
+                    <p class="title">Для кого этот проект</p>
+                    <a href="index.html#menu_4">Хочу в проект!</a>
+                </div>
+                <div class="items">
+                    <div class="item " data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-anchor-placement="top-bottom"
+                        style="background-image: url('assets/faberlic_fun_template/img/project/div.tn-atom.png');">
+                        <p class="title">Студентам <br> и учащимся</p>
+                        <div class="description">
+                            <p>тем, кто хочет получить реальный опыт работы еще во время учебы и обеспечивать себя
+                                финансами на протяжении всего обучения</p>
+                        </div>
+                    </div>
+                    <div class="item " data-aos="fade-up" data-aos-duration="1500"
+                        data-aos-anchor-placement="top-bottom"
+                        style="background-image: url('assets/faberlic_fun_template/img/project/div.tn-atom(1).png');">
+                        <p class="title">Домохозяйкам <br> и мамам в декрете</p>
+                        <div class="description">
+                            <p>тем, кто заботится о семье и домашних делах, но в свободное время хочет пополнять
+                                семейный бюджет</p>
+                        </div>
+                    </div>
+                    <div class="item " data-aos="fade-up" data-aos-duration="2000"
+                        data-aos-anchor-placement="top-bottom"
+                        style="background-image: url('assets/faberlic_fun_template/img/project/div.tn-atom(2).png');">
+                        <p class="title">Пенсионерам <br>и людям в возрасте</p>
+                        <div class="description">
+                            <p>тем, кто хочет сохранить активную социальную жизнь и чувство достижения даже после
+                                пенсии, получив денежную прибавку и возможность узнать много нового</p>
+                        </div>
+                    </div>
+                    <div class="item " data-aos="fade-up" data-aos-duration="2500"
+                        data-aos-anchor-placement="top-bottom"
+                        style="background-image: url('assets/faberlic_fun_template/img/project/div.tn-atom(3).png');">
+                        <p class="title">Работающим <br> по найму</p>
+                        <div class="description">
+                            <p>тем, кто готов получать дополнительный источник заработка, не отвлекаясь от основной
+                                работы</p>
+                        </div>
+                    </div>
+                    <div class="item " data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-anchor-placement="top-bottom"
+                        style="background-image: url('assets/faberlic_fun_template/img/project/div.tn-atom(4).png');">
+                        <p class="title">Временно не работающим, <br> но целеустремленным</p>
+                        <div class="description">
+                            <p>тем, кто когда-либо хотел развивать свой бизнес, но сомневался, что у него получится.</p>
+                        </div>
+                    </div>
+                    <div class="item " data-aos="fade-up" data-aos-duration="4000"
+                        data-aos-anchor-placement="top-bottom"
+                        style="background-image: url('assets/faberlic_fun_template/img/project/div.tn-atom(5).png');">
+                        <p class="title">Начинающим <br> предпринимателям</p>
+                        <div class="description">
+                            <p>тем, кто начинает свой карьерный путь, проект поможет получить реальный опыт продаж и
+                                комплексно развить компетенции, чтобы расширять бизнес не интуитивно</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper accordeon" id="menu_3">
+        <div class="container">
+            <div class="row">
+                <div class="accordeon_header">
+                    <p class="title">Ответы на частые вопросы</p>
+                    <p class="title_desc">Партнёрство</p>
+                </div>
+                <div id="accordeon">
+                    <div class="acc-head">
+                        Как присоединиться к проекту? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Мы свяжемся с Вами, чтобы бесплатно проконсультировать по всем интересующим Вас вопросам и
+                            подробнее рассказать о возможностях, после этого зарегистрируем Вас в проекте.</p>
+                        <p>Компания была образована 26 лет назад и на сегодняшний день сотрудничает с 40 странами мира.
+                        </p>
+                        <p>Создайте свой бизнес в компании с мировым именем и увеличьте доход без опыта и вложений.
+                            Начните с малого – покупайте для себя качественные товары российского производителя с
+                            достойными скидками!</p>
+                    </div>
+                    <div class="acc-head">
+                        Получится ли совмещать эту работу с основной? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Конечно, можно! Для работы в проекте достаточно 2-3 часа продуктивной работы в день. В первые
+                            месяцы, скорее всего, Ваш доход будет недостаточно высоким и основной заработок Вам не
+                            помешает. Когда же Вы влюбитесь в этот бизнес и выйдете на желаемый доход, то сможете
+                            отказаться от прежнего места работы, переехать в желаемый город и и вообще сделать все, что
+                            Вам хочется)) Почитайте историю успеха в компании Faberlic</p>
+                    </div>
+                    <div class="acc-head">
+                        Для работы нужно хорошо разбираться в работе компьютера? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Вовсе нет. Для работы достаточно минимального набора знаний ПК: включить и выключить
+                            компьютер, выйти в интернет, зайти на электронную почту, в социальные сети и скайп. А если
+                            вдруг Вы что-то не умеете или не знаете, мы научим Вас абсолютно бесплатно!</p>
+                    </div>
+                    <div class="acc-head">
+                        Откуда берутся деньги? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p><strong> Во-первых<br /></strong>Вы сами начинаете пользоваться качественной русской
+                            продукцией со скидкой 26% для своей семьи.</p>
+                        <p><br /><strong>Во-вторых<br /></strong>Мы бесплатно даем Вам простые и понятные инструкции, по
+                            которым Вы приглашаете делать то же самое других людей удобным для Вас способом - социальные
+                            сети (через рабочие аккаунты), доски объявлений, блоги. Таким образом, создается
+                            товарооборот, а за это компания платит реальные деньги.</p>
+                        <p><br /><strong>В итоге</strong><br />Вы экономите семейный бюджет на покупке качественной
+                            продукции и зарабатываете деньги с созданного товарооборота.</p>
+                    </div>
+                    <div class="acc-head">
+                        Для работы нужно хорошо разбираться в работе компьютера? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Вовсе нет. Для работы достаточно минимального набора знаний ПК: включить и выключить
+                            компьютер, выйти в интернет, зайти на электронную почту, в социальные сети и скайп. А если
+                            вдруг Вы что-то не умеете или не знаете, мы научим Вас абсолютно бесплатно!</p>
+                    </div>
+                    <div class="acc-head">
+                        Как получить заработанные деньги? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>В нашем проекте нет выплат на электронные кошельки и нелегального трудоустройства, мы не
+                            скрываем доходы от государства и не уклоняемся от уплаты налогов. Мы честно ведем свой
+                            бизнес, нарабатываем трудовой стаж, оплачиваем налоги и делаем отчисления в пенсионный фонд.
+                            Выплаты осуществляются 19 раз в год, это один раз в каждые три недели.</p>
+                        <p>После регистрации Вам присваивается индивидуальный номер, на который изначально будут
+                            поступать и накапливаться все заработанные деньги и бонусы, а Вы можете оплачивать ими
+                            половину стоимости заказа. Для получения наличного дохода нужно заключить контракт с
+                            компанией, открыть индивидуальное предпринимательство (ИП) или зарегистрироваться как
+                            самозанятый и открыть счет в любом банке, если его еще нет. Это делается не сложно и мы
+                            расскажем, как именно.</p>
+                        <p>После этого Вы на свой счет в банке получите все накопленные деньги и уже далее вывод будет
+                            осуществляться через вашу банковскую карту.</p>
+                    </div>
+                    <div class="acc-head">
+                        Мне придется покупать много товаров? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Нет, конечно! Только те товары, которые необходимы для Вас, вашей семьи и/или для развития
+                            вашего собственного бизнеса внутри компании.</p>
+                        <p>В каждом каталоге представлено более 1000 товаров, компания выпускает около 1 500 новинок в
+                            год и имеет широкий ассортимент продукции для современной семьи. Кроме того,
+                            спецпредложения, гибкие системы лояльности и скидки делают Faberlic очень привлекательным
+                            для своих клиентов.</p>
+                    </div>
+                    <div class="acc-head">
+                        А вдруг вы мошенники? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Мошенники выманивают деньги. Мы денег не просим. Мы приглашаем Вас совершать покупки товаров
+                            от российского производителя качественных товаров с достойными скидками и, если у Вас есть
+                            желание, построить свой собственный бизнес, где не требуется стартовый капитал или
+                            вступительный взнос. От Вас нужно только желание работать и зарабатывать, способность
+                            учиться и выполнять простые действия, которым Вас научит личный наставник.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="wrapper accordeon accordeon2">
+        <div class="container">
+            <div class="row">
+                <div class="accordeon_header">
+                    <p class="title_desc title_desc2">Продукция Faberlic</p>
+                </div>
+                <div id="accordeon">
+                    <div class="acc-head">
+                        В чем отличие ваших товаров от товаров других компаний? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Главный принцип компании Faberlic – широкий ассортимент + демократичные цены. По мнению сайта
+                            Комсомольской правды компанию Faberlic по праву можно считать супермаркетом на дому:
+                            легендарная кислородная косметика, уход за волосами, стайлинг и краски, персональная
+                            гигиена, парфюмерия, здоровое питание, одежда и обувь как для взрослых, так и для детей,
+                            товары для дома, товары для животных… И все это собственного производства!</p>
+                        <p>Faberlic ведёт активную социальную деятельность, уделяя особое внимание и поддержку молодым и
+                            многодетным матерям. Компания ежегодно оказывает помощь региональным детским домам и фондам,
+                            которые заботятся об инвалидах, пожилых людях, малоимущих семьях и детях с особенностями
+                            развития.</p>
+                        <p>Компания Faberlic не только ведущий производитель парфюмерно-косметических средств на
+                            российском рынке, но и прекрасный наставник и учитель.</p>
+                        <p>Мы с большим удовольствием готовы поделиться со всеми желающими своими знаниями в сферах
+                            красоты, бизнеса и саморазвития. У нас есть собственная школа бизнеса. Попробуйте продукцию
+                            нашей компании и Вы сами убедитесь, что она высочайшего качества, а приятным бонусом будут
+                            являться огромные скидки и денежные премии за пользование продукцией и рекомендации.</p>
+                    </div>
+                    <div class="acc-head">
+                        Есть ли какие-то противопоказания у продуктов Faberlic? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Для каждого товара на его странице размещены рекомендации, инструкции пользования и
+                            сертификаты, если они есть для этого товара.</p>
+                        <p>Компания регулярно становится лауреатом различных международных и российских премий в области
+                            разработок, дизайна, образования и науки, экологичности продуктов и их качества.</p>
+                    </div>
+                    <div class="acc-head">
+                        Что, если я получил некачественный товар? <div class="acc-icon">
+                            <svg role="presentation" focusable="false" width="30px" height="30px" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd"
+                                    stroke-linecap="square">
+                                    <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                                        <path d="M0,11 L22,11"></path>
+                                        <path d="M11,0 L11,22"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="acc-body">
+                        <p>Если по какой-либо причине Вас не устроит товар, не устраивает качество, товар поврежден при
+                            транспортировке, не подошел размер и т.д., Вы всегда в праве отказаться от товара и вернуть
+                            его. Никаких проблем!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form wrapper" id="menu_4">
+        <div class="container">
+            <div class="row">
+                <div class="form_bg">
+                    <form action="index.html" method="post" class="ajax_form af_example">
+                        <div class="form_title">
+                            <h2>Хочу в проект!</h2>
+                            <p>Оставьте заявку на консультацию,а мы позвоним и расскажем детали</p>
+                            <span class="title_logo"><b>Fuberlic</b>Fun</span>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-group-flex">
+                                <div class="flex_item">
+                                    <div class="controls">
+                                        <input type="text" id="af_name" name="name" value="" placeholder="ФИО"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="controls controls_af_date">
+                                        <label> Дата рождения </label>
+                                        <input type="date" id="af_date" name="date" max="2024-11-08" value="2000-01-01"
+                                            class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="flex_item">
+                                    <div class="controls controls_row">
+                                        <input type="email" id="af_email" name="email" value="" placeholder="E-mail"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="controls controls_row">
+                                        <input type="text" id="af.phone" name="phone" value="" placeholder="Телефон"
+                                            class="form-control tel" />
+                                    </div>
+                                    <div class="controls controls_row">
+                                        <input type="text" id="af.sity" name="sity" value=""
+                                            placeholder="Город проживания" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="id" value="id_form1" />
+                            <input type="hidden" name="time" value="08.11.2024 09:03:44" />
+
+                            <div class="flex_item item_btn">
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="af_action" value="39b75d51516ad877cf25494b1a0410c3" />
+                    </form>
+
+
+                    <!--script>
+
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '.' + dd + '.' + yyyy;
+document.write(today);
+
+const date = new Date();
+const additionOfYears = 18;
+date.setFullYear(date.getFullYear() - additionOfYears);
+console.log('New Date:', date);
+
+ const inputDate = document.querySelector('#af_date');
+  inputDate.value = '10.16.2023';
+</script-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $('#accordeon .acc-head').on('click', f_acc)
+        })
+        function f_acc(e) {
+            if ($(this).hasClass('active')) {
+                $("#accordeon .acc-head").removeClass("active")
+            }
+            else {
+                $("#accordeon .acc-head").removeClass("active")
+                $(this).addClass('active');
+            }
+            $('#accordeon .acc-body').not($(this).next()).slideUp(200)
+            $(this).next().slideToggle(200)
+        }
+
+    </script>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="assets/faberlic_fun_template/js/script.js"></script>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://snipp.ru/cdn/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script>
+        $('#btn').click(function () {
+            $.fancybox.open({
+                src: '#hidden',
+                type: 'inline'
+            });
+        });
+        $('#btn2').click(function () {
+            $.fancybox.open({
+                src: '#hidden2',
+                type: 'inline'
+            });
+        });
+
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+
+
+        window.addEventListener("DOMContentLoaded", function () {
+            [].forEach.call(document.querySelectorAll('.tel'), function (input) {
+                var keyCode;
+                function mask(event) {
+                    event.keyCode && (keyCode = event.keyCode);
+                    var pos = this.selectionStart;
+                    if (pos < 3) event.preventDefault();
+                    var matrix = " 8 (___) ___ ____",
+                        i = 0,
+                        def = matrix.replace(/\D/g, ""),
+                        val = this.value.replace(/\D/g, ""),
+                        new_value = matrix.replace(/[_\d]/g, function (a) {
+                            return i < val.length ? val.charAt(i++) : a
+                        });
+                    i = new_value.indexOf("_");
+                    if (i != -1) {
+                        i < 5 && (i = 3);
+                        new_value = new_value.slice(0, i)
+                    }
+                    var reg = matrix.substr(0, this.value.length).replace(/_+/g,
+                        function (a) {
+                            return "\\d { 1," + a.length + "} "
+                        }).replace(/[+()]/g, "\\$&");
+                    reg = new RegExp("^" + reg + "$");
+                    if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) {
+                        this.value = new_value;
+                    }
+                    if (event.type == "blur" && this.value.length < 5) {
+                        this.value = "";
+                    }
+                }
+
+                input.addEventListener("input", mask, false);
+                input.addEventListener("focus", mask, false);
+                input.addEventListener("blur", mask, false);
+                input.addEventListener("keydown", mask, false);
+
+            });
+
+        });
+
+        $(document).on('af_complete', function (event, response) {
+            var form = response.form;
+            if (form.attr('id') == 'id_form_modal-team') {
+                if (response.success) {
+                    $('.fancybox-button').click();
+                }
+            }
+            if (form.attr('id') == 'id_form_modal-shop') {
+                if (response.success) {
+                    $('.fancybox-button').click();
+                }
+            }
+            else {
+                console.log(response)
+            }
+        });
+    </script>
+    <script src="assets/components/ajaxform/js/default.js"></script>
+    <script
+        type="text/javascript">AjaxForm.initialize({ "assetsUrl": "\/assets\/components\/ajaxform\/", "actionUrl": "\/assets\/components\/ajaxform\/action.php", "closeMessage": "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435", "formSelector": "form.ajax_form", "pageId": 1 });</script>
+</body>
+
+</html>
